@@ -7,7 +7,7 @@ from reminder import subscribe_reminder, winning_reminder
 """主函数"""
 def main():
     url = "http://dcfm.eastmoney.com/em_mutisvcexpandinterface/api/js/get?type=KZZ_LB2.0&token=70f12f2f4f091e459a279469fe49eca5"  # 东方财富
-    print(url)  # 内容有时会乱序
+    print(url)  
     json_data = get_data(url)
     subscribe_reminder(json_data)
     winning_reminder(json_data)
