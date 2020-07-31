@@ -7,3 +7,4 @@
 3. 运行主函数main_bonds.py
 4. 若需要线上部署运行程序，可执行start.sh文件，命令：/bin/bash start.sh, 主函数main_bonds.py将在后台执行
 5. 查看程序运行状态，命令：ps aux | grep python
+6. 查看程序运行输出内容：cat bondreminder.out
