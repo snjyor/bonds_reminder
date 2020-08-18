@@ -51,9 +51,9 @@ def send_subscribe_message(subscribe_message_content):
     client = TwilioRestClient(account_sid, auth_token)
 
     message = client.messages.create(
-        to="+8615323342026",
-        from_="+12512501012",
-        body=subscribe_message_content)
+        to="+86153****2026",# 你的手机号码，需要加上+86，如：+8615322223333
+        from_="+125****1012",# twilio服务端获取到的号码
+        body=subscribe_message_content)# 短信内容
 
     message_sid = message.sid
 
@@ -62,16 +62,16 @@ def send_subscribe_message(subscribe_message_content):
 
 def send_winning_message(winning_message_content):
     # Your Account SID from twilio.com/console
-    account_sid = "ACf0da731e19503885d1484b0532ceb975"
-    # Your Auth Token from twilio.com/console
-    auth_token = "d83bfaefbb55608a20d95931299dec4e"
+    account_sid = "ACf0da731e19503885d1484b0532ceb9**"   # 你自己的account_sid
+    # Your Auth Token from twilio.com/console  
+    auth_token = "d83bfaefbb55608a20d95931299dec**"  # 你自己的auth_token
 
     client = TwilioRestClient(account_sid, auth_token)
 
     message = client.messages.create(
-        to="+8615323342026",
-        from_="+12512501012",
-        body=winning_message_content)
+        to="+86153****2026",   # 你的手机号码，需要加上+86，如：+8615322223333
+        from_="+125****1012",  # twilio服务端获取到的号码
+        body=winning_message_content)  # 短信内容
     message_sid = message.sid
 
     return message_sid
