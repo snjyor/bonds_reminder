@@ -44,9 +44,9 @@ def winning_message_data(now_winning_data):
 
 def send_subscribe_message(subscribe_message_content):
     # Your Account SID from twilio.com/console
-    account_sid = "ACf0da731e19503885d1484b0532ceb975"
+    account_sid = "ACf0da731e19503885d1484b0532ceb9**" # 你自己的account_sid
     # Your Auth Token from twilio.com/console
-    auth_token = "d83bfaefbb55608a20d95931299dec4e"
+    auth_token = "d83bfaefbb55608a20d95931299dec**" # 你自己的auth_token
 
     client = TwilioRestClient(account_sid, auth_token)
 
